@@ -7,7 +7,7 @@ app.debug = 'DEBUG' in os.environ
 
 @app.route('/')
 def index():
-    return app.send_static_file('index.html')
+    return "HEROKU DEPLOYED" #app.send_static_file('index.html')
 
 
 @app.route('/<path:path>')

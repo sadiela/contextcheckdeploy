@@ -7,9 +7,11 @@ app.debug = 'DEBUG' in os.environ
 
 @app.route('/', methods=['GET', 'POST'])
 def index():
-    return "HEROKU DEPLOYED" #app.send_static_file('index.html')
+    return app.send_static_file('index.html')
 
 
 @app.route('/<path:path>')
 def static_file(path):
     return app.send_static_file(path)
+
+# https://heroku-framework18.herokuapp.com/

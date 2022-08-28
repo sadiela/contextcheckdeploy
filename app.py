@@ -5,7 +5,7 @@ app = Flask(__name__, static_folder='build/', static_url_path='/')
 app.debug = 'DEBUG' in os.environ
 
 
-@app.route('/')
+@app.route('/', methods=['GET', 'POST'])
 def index():
     return "HEROKU DEPLOYED" #app.send_static_file('index.html')
 

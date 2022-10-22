@@ -1,6 +1,8 @@
 # dependencies
 /node_modules
 
+features.ckpt
+
 # testing
 /coverage
 

@@ -3,6 +3,9 @@
 
 features.ckpt
 
+# data stuff 
+/data
+
 # testing
 /coverage
 

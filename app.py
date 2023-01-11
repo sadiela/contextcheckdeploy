@@ -8,7 +8,7 @@ import python_functions.TestSentence as TestSentence
 import python_functions.newscraper as newscraper
 import python_functions.RelatedArticles_five_calls as RA #import getarticles
 import python_functions.keyword_detection as keyword_detection
-import python_functions.tips as tips
+#import python_functions.tips as tips
 
 import random
 
@@ -95,7 +95,7 @@ def scrape_article():
 
 @app.route('/loaderwords', methods=['GET'])
 def get_word():
-    return tips.get_tips()
+    return get_tips()
 
 @app.route('/', methods=['GET', 'POST'])
 def index():
